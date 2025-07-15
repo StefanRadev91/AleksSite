@@ -14,7 +14,6 @@ import {
 import { 
   IconCheck
 } from '@tabler/icons-react'
-import dacaImage from '../assets/DACA.png'
 import armeecImage from '../assets/logos_EN_Armeec .png'
 import bulgariaAirImage from '../assets/Bulgaria_Air_logo.png'
 import azureDevOpsImage from '../assets/Azure-DevOps-Logo.png'
