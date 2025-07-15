@@ -18,6 +18,8 @@ import dacaImage from '../assets/DACA.png'
 import armeecImage from '../assets/logos_EN_Armeec .png'
 import bulgariaAirImage from '../assets/Bulgaria_Air_logo.png'
 import azureDevOpsImage from '../assets/Azure-DevOps-Logo.png'
+import unknownImage from '../assets/Unknown.jpeg'
+import avisBudgetSafetyImage from '../assets/avis_budget_safety.png'
 import { useEffect, useRef, useState } from 'react'
 
 export function PortfolioSection() {
@@ -123,6 +125,46 @@ export function PortfolioSection() {
       },
       liveUrl: '#',
       githubUrl: '#'
+    },
+    {
+      title: 'Avis/Budget Car Rental Platform',
+      description: 'Enterprise car rental management system with booking, fleet management, and customer service capabilities',
+      image: avisBudgetSafetyImage,
+      technologies: ['Car Rental', 'Fleet Management', 'Booking System', 'Customer Service', 'Enterprise'],
+      features: [
+        'Fleet management optimization',
+        'Booking system integration',
+        'Customer service workflows',
+        'Enterprise-level scalability',
+        'Multi-location support'
+      ],
+      results: {
+        coverage: '100%',
+        timeReduction: '65%',
+        bugDetection: 'Operational success'
+      },
+      liveUrl: '#',
+      githubUrl: '#'
+    },
+    {
+      title: 'Senshi, Falkonwings, Frontex',
+      description: 'Three distinct projects: Senshi (martial arts events website), Falkonwings (film studio website), and Frontex (financial sector platform)',
+      image: unknownImage,
+      technologies: ['Web Development', 'Multi-domain', 'Events Platform', 'Media Production', 'Financial Services'],
+      features: [
+        'Senshi: Martial arts events management',
+        'Falkonwings: Film studio portfolio',
+        'Frontex: Financial services platform',
+        'Multi-project coordination',
+        'Cross-industry expertise'
+      ],
+      results: {
+        coverage: '95%',
+        timeReduction: '60%',
+        bugDetection: 'Multi-sector success'
+      },
+      liveUrl: '#',
+      githubUrl: '#'
     }
   ]
 
@@ -152,7 +194,7 @@ export function PortfolioSection() {
 
         <Grid gutter="xl">
           {projects.map((project, index) => (
-            <Grid.Col span={{ base: 12, md: 6 }} key={index}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 4 }} key={index}>
               <Card shadow="md" padding="xl" radius="md" withBorder h="100%">
                 <Card.Section>
                   <Image
@@ -165,7 +207,7 @@ export function PortfolioSection() {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      backgroundColor: '#f8f9fa'
+                      backgroundColor: project.image === avisBudgetSafetyImage ? '#ffffff' : '#f8f9fa'
                     }}
                   />
                 </Card.Section>

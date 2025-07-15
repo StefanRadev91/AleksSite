@@ -1,6 +1,6 @@
 import { Container, Title, Text, Button, Group, Stack, Avatar, Grid, Paper, Badge, ThemeIcon, ActionIcon, useMantineColorScheme } from '@mantine/core'
 import { IconDownload, IconMail, IconCalendar, IconUsers, IconBrandAzure, IconSun, IconMoon } from '@tabler/icons-react'
-import profilePhoto from '../assets/а.png'
+import profilePhoto from '../assets/EADF7B64-5784-4F66-824C-41BE097C5164.png'
 import alexCV from '../assets/Alex%20Stoynev%20CV.pdf'
 import { useEffect, useRef, useState } from 'react'
 
@@ -80,6 +80,10 @@ export function HeroSection() {
                 radius="md" 
                 src={profilePhoto}
                 alt="Alex Stoinev"
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center 40%'
+                }}
               />
             </Stack>
           </Grid.Col>

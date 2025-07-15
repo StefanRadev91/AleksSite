@@ -2,7 +2,6 @@ import { AppShell } from '@mantine/core'
 import { HeroSection } from './components/HeroSection'
 import { AboutSection } from './components/AboutSection'
 import { PortfolioSection } from './components/PortfolioSection'
-import { BlogSection } from './components/BlogSection'
 import { Footer } from './components/Footer'
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
           <HeroSection />
           <AboutSection />
           <PortfolioSection />
-          <BlogSection />
         </main>
         <Footer />
       </AppShell>
